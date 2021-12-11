@@ -6,9 +6,11 @@ class bankuser:
 
     def make_deposit(self,amount):
         self.balance += amount
+        return self
 
     def make_withdrawl(self,amount):
         self.balance -= amount
+        return self
 
     def user_balance(self):
         print(f'Account of {self.name}\nCurrent Balance: ${self.balance}')
@@ -31,9 +33,7 @@ elisha.make_deposit(180)
 elisha.make_withdrawl(65)
 elisha.user_balance()
 
-serge.make_deposit(1000)
-serge.make_deposit(325)
-serge.make_withdrawl(1100)
+serge.make_deposit(1000).make_deposit(325).make_withdrawl(1100)
 serge.user_balance()
 
 levi.make_deposit(1975)
