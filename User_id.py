@@ -5,6 +5,7 @@ class bankuser:
         self.balance = balance
 
     def make_deposit(self,amount):
+        assert amount >= 0, f'Deposit amount {amount} cannot be negative'
         self.balance += amount
         return self
 
@@ -26,7 +27,7 @@ levi = bankuser("Levi", "acer")
 serge = bankuser("Serge", "Surge")
 elisha = bankuser("Elisha", "Eli")
 
-elisha.make_deposit(100)
+elisha.make_deposit(-100)
 elisha.make_deposit(75)
 elisha.make_deposit(180)
 
