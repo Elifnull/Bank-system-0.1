@@ -1,8 +1,8 @@
 class bankuser:
-    def __init__(self, name, login):
+    def __init__(self, name: str, login: str, balance = 0):
         self.name = name
         self.login = login
-        self.balance = 0
+        self.balance = balance
 
     def make_deposit(self,amount):
         self.balance += amount
