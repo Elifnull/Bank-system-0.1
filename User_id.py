@@ -36,11 +36,7 @@ elisha.user_balance()
 serge.make_deposit(1000).make_deposit(325).make_withdrawl(1100)
 serge.user_balance()
 
-levi.make_deposit(1975)
-levi.make_withdrawl(975)
-levi.make_withdrawl(85)
-levi.make_withdrawl(15)
-levi.user_balance()
+levi.make_deposit(1975).make_withdrawl(975).make_withdrawl(85).make_withdrawl(15).user_balance()
 
 levi.transfer_money(serge, 800)
 
