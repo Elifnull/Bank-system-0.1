@@ -44,3 +44,5 @@ levi.user_balance()
 
 levi.transfer_money(serge, 800)
 
+serge.transfer_money(levi, 650)
+
